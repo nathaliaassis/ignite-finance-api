@@ -1,7 +1,7 @@
 # Finance API 
 
 ## About
-Finance API developed during back-end online course 
+Finance API developed during Rocketseat back-end online course 
 ## Commands 
 Install dependencies: 
 ```cmd 
