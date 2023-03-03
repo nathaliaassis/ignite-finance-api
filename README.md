@@ -13,11 +13,11 @@ Run application:
 npm run dev
 ```
 
-Tests:  
+Run tests:  
 ```cmd 
 npm run test
 ```
 
 ## Technologies 
- `` dotenv | eslint| fastify| knex | node | sqlite3| typescript| zod ``
+ `` dotenv | eslint| fastify| knex | node | sqlite3| typescript| zod | supertest | vitest ``
 
