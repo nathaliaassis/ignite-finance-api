@@ -28,6 +28,9 @@ jobs:
 
       - name: Install dependencies and run migrations
         run: npm install && npm run knex -- migrate:latest && npm run build
+        
+      - name: Build application
+        run: npm run build
 
       - name: Run tests
         run: npm test
