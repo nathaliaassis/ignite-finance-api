@@ -36,10 +36,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies and run migrations
-        run: npm install && npm run knex -- migrate:latest && npm run build
-        
-      - name: Build application
-        run: npm run build
+        run: npm install && npm run knex -- migrate:latest
 
       - name: Run tests
         run: npm test
