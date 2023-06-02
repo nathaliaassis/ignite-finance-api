@@ -13,16 +13,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      DATABASE_CLIENT: ${{ secrets.DATABASE_CLIENT }}
-      NODE_ENV: ${{ secrets.NODE_ENV }}
-
     strategy:
       matrix:
         node-version: [18.x]
 
     steps:
+      - name: Setup environment variables
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_CLIENT: ${{ secrets.DATABASE_CLIENT }}
+          NODE_ENV: ${{ secrets.NODE_ENV }}
+        run: echo "Configured environment variables"
+        
       - name: Checkout code
         uses: actions/checkout@v3
 
