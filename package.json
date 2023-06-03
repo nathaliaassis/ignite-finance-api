@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^18.14.2",
     "@types/supertest": "^2.0.12",
     "eslint": "^8.35.0",
@@ -31,9 +30,9 @@
     "knex": "^2.4.2",
     "pg": "^8.9.0",
     "sqlite3": "^5.1.4",
+    "supertest": "^6.3.3",
     "tsx": "^3.12.3",
-    "zod": "^3.20.6",
     "vitest": "^0.29.2",
-    "supertest": "^6.3.3"
+    "zod": "^3.20.6"
   }
 }

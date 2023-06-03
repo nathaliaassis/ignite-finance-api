@@ -5,28 +5,24 @@ name: Node.js CI Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     env:
-        DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        DATABASE_CLIENT: ${{ secrets.DATABASE_CLIENT }}
-        NODE_ENV: ${{ secrets.NODE_ENV }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DATABASE_CLIENT: ${{ secrets.DATABASE_CLIENT }}
+      NODE_ENV: ${{ secrets.NODE_ENV }}
 
     strategy:
       matrix:
         node-version: [18.x]
 
     steps:
-      - name: Setup environment variables
-       
-        run: echo "Configured environment variables"
-        
       - name: Checkout code
         uses: actions/checkout@v3
 
