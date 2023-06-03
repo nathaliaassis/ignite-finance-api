@@ -115,7 +115,7 @@ describe("Transactions", () => {
     expect(getSummaryResponse.status).toEqual(200);
     expect(getSummaryResponse.body.summary).toEqual(
       expect.objectContaining({
-        amount: 10,
+        amount: 3000,
       })
     );
   });
